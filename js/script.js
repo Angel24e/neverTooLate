@@ -1,6 +1,6 @@
-const dogApi = ``
+const breweryApi = `https://api.openbrewerydb.org/breweries`
 
-fetch(dogApi)
+fetch(breweryApi)
   .then(function (response) {
     return response.json();
   })
