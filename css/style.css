@@ -1,0 +1,13 @@
+.ridiculous {
+    font-size: 1.2rem;
+}
+
+.ridiculousHeader {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.backgroundBrewery {
+    background-image: url("./images/brewery.jpg");
+    background-size: 100%;
+}
