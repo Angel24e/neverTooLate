@@ -1,24 +1,37 @@
-const breweryApi = `https://api.openbrewerydb.org/breweries`
+const dropdown = document.getElementById("brewery");
 
-const searchButton = document.querySelector(".handleSearchButton");
+const randomRecipe = document.querySelector(".randomRecipe");
 
-const searchInput = document.getElementById("brewery")
+const breweryName = document.querySelector(".name");
 
-function searchForBrewery() {
+const breweryAddress = document.querySelector(".address");
+
+const breweryNumber = document.querySelector(".phoneNumber");
+
+const breweryWebsite = document.querySelector(".website_url");
+
+function searchForBrewery(event) {
   event.preventDefault();
-  console.log(searchInput.value)
-  fetch(breweryApi)
+  fetch(`https://api.openbrewerydb.org/breweries?by_type=${dropdown.value}&per_page=10`)
   .then(function (response) {
     return response.json();
   })
   .then(function(data) {
     console.log(data);
-    displayBreweryLocation(data);
+    displayBreweryLocation(data[Math.floor(Math.random() * 10)]);
   });
 }
 
+
+
 function displayBreweryLocation(data) {
   console.log("Current Brewery Data: ", data);
+  breweryName.textContent = "Name: " + data.name;
+  breweryAddress.textContent = "Address: " + data.street + ", " + data.city + ", " + data.state; 
+  breweryNumber.textContent = "Phone Number: " + data.phone;
+  breweryWebsite.textContent = "Website Url: " + data.website_url;
 }
 
-searchButton.addEventListener("click", searchForBrewery)
+// function getRandomRecipe()
+
+dropdown.addEventListener("change", searchForBrewery);

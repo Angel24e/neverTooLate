@@ -11,3 +11,7 @@
     background-image: url("./images/brewery.jpg");
     background-size: 100%;
 }
+
+.vertical {
+    flex-direction: column;
+}
