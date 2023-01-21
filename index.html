@@ -18,20 +18,43 @@
         <div class="column is-5 has-background-grey-light">
             <div class="ridiculousHeader is-5 has-text-centered">Breweries page/side</div>
             <hr class="has-background-grey">
-            <form action="" class="columns is-12 mr-3">
-                <label for="brewery" class="ridiculous">Enter your city and it will show nearby breweries.</label>
-                <input name="brewery" type="search" id="brewery" placeholder="Enter city">
-                <button type="submit" class="handleSearchButton">search</button>
+            <form action="" class="columns is-12 mr-3 is-justify-content-space-around">
+                <label for="brewery" class="is-5">Choose a type of brewery and we'll provide you with a random one</label>
+                <select class="column is-5 ridiculous" name="brewery" id="brewery">
+                    <option value="micro" selected>micro</option>
+                    <option value="nano">nano</option>
+                    <option value="regional">regional</option>
+                    <option value="brewpub">brewpub</option>
+                    <option value="large">large</option>
+                    <option value="planning">planning</option>
+                    <option value="bar">bar</option>
+                    <option value="contract">contract</option>
+                    <option value="proprietor">proprietor</option>
+                    <option value="closed">closed</option>
+                </select>
             </form>
-            <img src="./images/brewery.jpg" alt="Brewery Image" class="m-auto">
+            <div class="columns is-justify-content-space-around">
+                <img src="./images/brewery.jpg" alt="Brewery Image" class="column is-5">
+                <div class="column is-5">
+                    <div class="columns vertical">
+                        <div class="column name">name</div>
+                        <div class="column address">address</div>
+                        <div class="column phoneNumber">phoneNumber</div>
+                        <div class="column website_url">website_url</div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="column is-5 has-background-grey-light">
             <div class="ridiculousHeader is-5 has-text-centered">Drinks page/side</div>
             <hr class="has-background-grey">
             <div class="columns">
-                <a class="column is-9 is-offset-1 ridiculous" href="./htmlHolder/recipes.html">Click me to get a random drinks recipe.</a>
+                <a class="column is-9 is-offset-1 ridiculous randomRecipe" href="./htmlHolder/recipes.html">Click me to get a random drinks recipe.</a>
             </div>
-            <img src="./images/bar.png" alt="Bar Image">
+            <div class="columns is-justify-content-center">
+                <img src="./images/bar.png" alt="Bar Image" class="column is-11">
+            </div>
         </div>
     </div>
     <footer class="footer has-background-dark">
