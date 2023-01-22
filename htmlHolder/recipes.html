@@ -9,10 +9,28 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="columns is-justify-content-center is-$primary">
-        <div class="column is-10 box is-$primary">
-            <div class="">hi</div>
+    <div class="columns is-justify-content-center">
+        <div class="column is-8 box has-background-primary-dark">
+            <div class="columns is-justify-content-center">
+                <div class="drinkTitle column is-10 is-offset-8 ridiculousHeader">Drink Title</div>
+            </div>
+            <hr>
+            <div class="columns vertical is-justify-content-center">
+                <div class="drinkCategory column is-12 has-text-centered">category</div>
+                <div class="drinkInstructions column is-12 has-text-centered">instructions</div>
+                <div class="drinkGlass column is-12 has-text-centered">Glass</div>
+                <div class="drinkImage column is-12 has-text-centered">Image</div>
+            </div>
         </div>
+    </div>
+    <hr>
+    <form class="columns is-justify-content-center">
+        <label for="favorite" class="">Favorite This recipe</label>
+        <input type="checkbox" class="favorite has-background-warning">
+    </form>
+    <hr>
+    <div class="columns is-justify-content-center">
+        <button class="seeFavorites column is-2">See your favorites</button>
     </div>
     <script src="/js/recipe.js"></script>
 </body>
