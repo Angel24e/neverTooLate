@@ -29,14 +29,19 @@ function getRandomRecipe() {
   })
 }
 
+getRandomRecipe();
+
 function randomRecipe(data) {
   drinkTitle.textContent = data.drinks[0].strDrink;
   drinkCategory.textContent = "Category of Drink: " + data.drinks[0].strCategory;
   drinkInstructions.textContent = "Instructions: " + data.drinks[0].strInstructions;
   drinkGlass.textContent = "Glass of choice: " + data.drinks[0].strGlass;
   drinkImage.innerHTML = "<img src=" + data.drinks[0].strDrinkThumb + ">";
+  favoriteRecipe(data);
 }
 
-getRandomRecipe();
+function favoriteRecipe(data) {
+  localStorage.setItem("DrinkTitle", drinktitle.value);
+}
 
-favorite.addEventListener("on")
+favorite.addEventListener("checked", favoriteRecipe);

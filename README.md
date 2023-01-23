@@ -6,10 +6,12 @@
 
 ## Link
 
-- Deployed website link.
+https://angel24e.github.io/neverTooLate/
 ## Screenshots of website
 
-- Home page screenshot.
+![alt text](./images/hpScreenshot.png)
+
+![alt text](./images/2ndScreenshot.png)
 ## Credits
 
 - The first api I used was Open Brewery DB.
