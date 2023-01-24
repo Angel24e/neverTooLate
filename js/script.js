@@ -22,8 +22,6 @@ function searchForBrewery(event) {
   });
 }
 
-
-
 function displayBreweryLocation(data) {
   console.log("Current Brewery Data: ", data);
   breweryName.textContent = "Name: " + data.name;
@@ -31,7 +29,5 @@ function displayBreweryLocation(data) {
   breweryNumber.textContent = "Phone Number: " + data.phone;
   breweryWebsite.textContent = "Website Url: " + data.website_url;
 }
-
-// function getRandomRecipe()
 
 dropdown.addEventListener("change", searchForBrewery);

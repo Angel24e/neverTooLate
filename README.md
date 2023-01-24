@@ -1,15 +1,21 @@
 # Never Too Late 
 
-- We made a website for people to find breweries and if they don't like going out they can look up some of our cocktail mixes
+## Description
 
+- I made a website for people to find breweries and if they don't like going out they can look up some of our cocktail mixes.
 
+## Link
+
+https://angel24e.github.io/neverTooLate/
 ## Screenshots of website
 
-- Home page screenshot.
+![alt text](./images/hpScreenshot.png)
+
+![alt text](./images/2ndScreenshot.png)
 ## Credits
 
-- The first api we used was Open Brewery DB.
+- The first api I used was Open Brewery DB.
 
-- The second api we used was .....
+- The second api I used was CockTail DB.
 
-- The css framework we are using is Bulma.
+- The css framework I used is Bulma.
